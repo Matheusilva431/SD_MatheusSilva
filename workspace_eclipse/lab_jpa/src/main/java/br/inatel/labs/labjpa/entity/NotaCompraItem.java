@@ -28,6 +28,24 @@ public class NotaCompraItem {
 	@ManyToOne
 	private Produto produto;
 	
+	// construtores...
+	public NotaCompraItem() {
+	}
+	
+	public NotaCompraItem(
+			NotaCompra notaCompra, 
+			Produto produto, 
+			BigDecimal valorCompraProduto,
+			Integer quantidade) {
+		super();
+		this.notaCompra = notaCompra;
+		this.produto = produto;
+		this.valorCompraProduto = valorCompraProduto;
+		this.quantidade = quantidade;
+	}
+
+
+
 	// Calculo do total do item em tempo de execução:
 	public BigDecimal getCalculoTotalItem() {
 		return valorCompraProduto.multiply( BigDecimal.valueOf(quantidade) );

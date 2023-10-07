@@ -18,6 +18,15 @@ public class Fornecedor {
 	@Size(min = 2, max = 100)
 	private String razaoSocial;
 	
+	// construtores...
+	public Fornecedor() {
+	}
+	
+	public Fornecedor(String razaoSocial) {
+		super();
+		this.razaoSocial = razaoSocial;
+	}
+
 	@ManyToMany
 	private List<Produto> listaProduto;
 	

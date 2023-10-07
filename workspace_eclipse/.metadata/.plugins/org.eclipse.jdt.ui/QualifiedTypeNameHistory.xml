@@ -3,13 +3,7 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
     <fullyQualifiedTypeName name="org.hibernate.dialect.function.ListaggStringAggEmulation"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.entity.Fornecedor"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.entity.NotaCompraItem"/>
-    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Size"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Positive"/>
     <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
@@ -17,4 +11,22 @@
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Past"/>
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.entity.Produto"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.service.ProdutoService"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.service.FornecedorService"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.entity.Fornecedor"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.PersistenceContext"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.service.NotaCompraService"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.entity.NotaCompra"/>
+    <fullyQualifiedTypeName name="br.inatel.labs.labjpa.entity.NotaCompraItem"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
 </qualifiedTypeNameHistroy>

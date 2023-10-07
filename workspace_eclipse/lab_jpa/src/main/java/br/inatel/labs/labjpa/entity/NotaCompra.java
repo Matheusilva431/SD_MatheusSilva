@@ -13,6 +13,7 @@ import jakarta.validation.constraints.Past;
 public class NotaCompra {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@NotNull
@@ -25,6 +26,17 @@ public class NotaCompra {
 	@OneToMany(mappedBy = "notaCompra")
 	private List<NotaCompraItem> listaNotaCompraItem;
 	
+	// construtores...
+	
+	public NotaCompra() {
+	}
+	
+	public NotaCompra(@NotNull @Past LocalDate dataEmissao, Fornecedor fornecedor) {
+		super();
+		this.dataEmissao = dataEmissao;
+		this.fornecedor = fornecedor;
+	}
+
 	// Calcula o total da nota somando os totais de cada item
 	public BigDecimal getCalculoTotalNota() {
 		return listaNotaCompraItem.stream()
