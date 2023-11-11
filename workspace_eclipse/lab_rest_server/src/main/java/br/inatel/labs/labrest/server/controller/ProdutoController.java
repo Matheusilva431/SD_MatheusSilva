@@ -55,7 +55,7 @@ public class ProdutoController {
 	
 	@PutMapping
 	@ResponseStatus(code = HttpStatus.NO_CONTENT)
-	public void putProduto(Produto p) {
+	public void putProduto(@RequestBody Produto p) {
 		service.update(p);
 	}
 	

@@ -1,5 +1,6 @@
 package br.inatel.labs.labrest.server.service;
 
+import java.io.Console;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ public class ProdutoService {
 	
 	public Optional<Produto> findById(Long id) {
 		return this.produtos.stream()
-				.filter(p -> p.getId() == id)
+				.filter(p -> p.getId().equals(id))
 				.findFirst();
 	}
 	
